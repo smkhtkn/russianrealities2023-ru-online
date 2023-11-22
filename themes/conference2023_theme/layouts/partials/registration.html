@@ -1,7 +1,7 @@
 <div class="py-5 p-lg-5 bg-white rounded-0 border border-3 border-danger shadow-at">
     <h2 id="Registration" class="display-4 display-5 fw-bold text-center mb-5 ptserif">Регистрация</h2>
     
-    <form method="POST" action="https://script.google.com/macros/s/{{with .google}}{{.}}{{end}}/exec" class="mx-5" id="regform">
+    <form method="POST" action="https://script.google.com/macros/s/{{with .google}}{{.}}{{end}}/exec" class="mx-5 d-none" id="regform">
         <div class="d-lg-flex mb-3">
         <div class="col-12 col-lg-6 pe-lg-3">
             <label for="name" class="form-label display-9">Как к вам обращаться?</label>
@@ -96,4 +96,10 @@
         
     </form>
     <div id="success-message" class="d-none mx-5 display-8 text-center">{{with .success}}{{.}}{{end}} <a href="mailto:info@sakharov.world">info@sakharov.world</a></div>
+    <div class="alert alert-danger rounded-0" role="alert">
+        <h4 class="alert-heading">Регистрация закрыта</h4>
+        <p>Регистрация на конференцию «Страна и мир: российские реалии 2023» закрыта. Если вы не успели зарегистрироваться, приглашаем вас смотреть конференцию в прямом эфире в нашем Youtube-канале 23 и 24 ноября.</p>
+        <hr>
+        <a href="https://www.youtube.com/channel/UC09ejntr2YAzZwVuWhpwx3g" target="_blank" class="btn btn-danger rounded-0" role="button">Youtube-канал «О стране и мире»</a>
+      </div>
 </div>
